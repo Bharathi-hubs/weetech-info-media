@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 
 const EditableTable = () => {
   const [data, setData] = useState([
-    { id: 1, addOnItems: "Bharathi", orderBy: "1", amount: "23.00" },
-    { id: 2, addOnItems: "Mahi", orderBy: "2", amount: "34.00" },
-    { id: 3, addOnItems: "Thiya", orderBy: "3", amount: "12.00" },
+    { id: 1, addOnItems: "Sprit 200 ml", orderBy: "1", amount: "23.00" },
+    { id: 2, addOnItems: "7Up 250ml", orderBy: "2", amount: "34.00" },
+    { id: 3, addOnItems: "Maaza 400ml", orderBy: "3", amount: "12.00" },
   ]);
 
   const [editIndex, setEditIndex] = useState(-1);

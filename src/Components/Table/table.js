@@ -12,19 +12,25 @@ const categoryOptions = [
 
 const productOptions = {
   fruit: [
-    { value: "ProductSelectorle", label: "ProductSelectorle" },
+    { value: "apple", label: "Apple" },
+    { value: "gova", label: "Gova" },
+    { value: "grapes", label: "Grapes" },
     { value: "orange", label: "Orange" },
     { value: "banana", label: "Banana" }
   ],
   vegetable: [
     { value: "carrot", label: "Carrot" },
+    { value: "chilli", label: "Chilli" },
+    { value: "potato", label: "Potato" },
     { value: "tomato", label: "Tomato" },
     { value: "broccoli", label: "Broccoli" }
   ],
   meat: [
     { value: "chicken", label: "Chicken" },
     { value: "beef", label: "Beef" },
-    { value: "pork", label: "Pork" }
+    { value: "pork", label: "Pork" },
+    { value: "mutton", label: "Mutton" },
+    { value: "fish", label: "Fish" }
   ]
 };
 
@@ -81,7 +87,7 @@ const ProductSelector = () => {
         {selectedProducts.map((product) => (
           <div key={product.value} className="alert alert-success m-2 " style={{ width: "fit-content" }}>
             <p className="m-0"> {product.label}{" "}
-            &nbsp;            &nbsp;
+              &nbsp;            &nbsp;
               <button
                 onClick={() =>
                   setSelectedProducts(selectedProducts.filter((p) => p !== product))
