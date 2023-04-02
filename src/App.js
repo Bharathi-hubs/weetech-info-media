@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Sort from "./Components/Table/sortableTable";
 import ProductSelector from "./Components/Table/table";
 import EditableTable from "./Components/Table/table copy";
 import 'bootstrap/dist/css/bootstrap.min.css'
