@@ -1,12 +1,14 @@
+/**------------------------------Assets------------------------------------ */
+import './Assets/style.css'
+/**------------------------------Pages------------------------------------ */
+import EditableTable from "./Pages/editableTable";
+import ProductSelector from "./Pages/productListing";
+/**------------------------------Dependencies------------------------------------ */
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ProductSelector from "./Components/Table/table";
-import EditableTable from "./Components/Table/table copy";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 
 function App() {
-
-
   return (
     <div>
       <BrowserRouter>
